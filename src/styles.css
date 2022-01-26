@@ -19,3 +19,42 @@ main > h1 {
   text-align: center;
   font-size: 3.5em;
 }
+
+html, body{
+background: #efefef;
+height: 100%;
+}
+
+#center-text{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+#chat-circle{
+  position: sticky;
+  bottom: 50px;
+  right: 50px;
+  background: #5A5EB9;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  color: white;
+  padding: 28px;
+  cursor: pointer;
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.6), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+}
+
+.btn#my-btn{
+  background: white;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  border-radius: 45px;
+  border-right: 40px;
+  border-left: 40px;
+  color: #5865C3;
+}
+
