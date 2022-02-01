@@ -1,0 +1,379 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Covid Suraksha Bot</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link
+      rel="shortcut icon"
+      href="https://appservice.azureedge.net/images/app-service/v3/favicon.ico"
+      type="image/x-icon"
+      
+    />
+    <link
+      rel="stylesheet"
+      href="https://ajax.aspnetcdn.com/ajax/bootstrap/4.1.1/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    
+    <script
+      src="https://appservice.azureedge.net/scripts/app-service/v3/loc.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        try {
+          var a = window.location.hostname;
+          if (a.includes(".azurewebsites.net")) {
+            a = a.replace(".azurewebsites.net", "");
+          }
+          var b = document.getElementById("depCenterLink1");
+          b.setAttribute("href", b.getAttribute("href") + "&sitename=" + a);
+          loc();
+        } catch (d) {}
+      };
+    </script>
+  </head>
+
+  <body>
+    
+    <header class="header">
+
+    <a href="#" class="logo"style="left:400px;margin-left: 18px;"> <i class="heartbeat"></i> Covid Suraksha </a>
+
+    <nav class="navbar" style="right: 30px;">
+        <a href="#home">home</a>
+        <a href="#global impact">Global</a>
+        <a href="#impact">Impact</a>
+        <a href="#fetality">Fetality</a>
+        <a href="#book">Vaccination</a>
+        <a href="#review">Tests</a>
+        <a href="#blogs">Confirm-ratio</a>
+    </nav>
+
+    <div id="menu-btn" class="bars"></div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+  
+    <div class="image">
+        <iframe src="https://covid-19.dataflowkit.com/assets/widget/c19-widget-light.html" 
+	frameborder="0" scrolling="no"
+	width="600" height="250">
+</iframe>
+    </div>
+
+    <div class="content">
+        <h3>stay safe, stay healthy</h3>
+        <p>Regular checkups can help individuals identify their disease and get it cured early</p>
+        <a href="#ending" class="btn"style="font-size:20px;"> Quick Links <span class="my_button"></span> </a>
+    </div>
+    
+
+</section>
+
+<!-- home section ends -->
+
+<!-- icons section starts  -->
+
+
+<!-- icons section ends -->
+
+<!-- global impact section starts  -->
+
+<section class="global impact" id="global impact">
+
+    <h1 class="heading"> COVID <span>Worldwide</span> </h1>
+
+    <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" width="100%" height="600px"></iframe>
+
+</section>
+
+<!-- global impact section ends -->
+
+<!-- impact section starts  -->
+
+<section class="impact" id="impact">
+
+    <h1 class="heading"> <span>Impact</span> Data </h1>
+<div class="flourish-embed flourish-chart" data-src="story/230085">
+<script src="https://public.flourish.studio/resources/embed.js"></script>
+</div>
+
+</section>
+
+<!-- impact section ends -->
+
+<!-- fetality section starts  -->
+
+<section class="fetality" id="fetality">
+
+    <h1 class="heading"> Death Cases <span> Count</span> </h1>
+    
+    <div class="flourish-embed flourish-map" data-src="story/225979">
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+    </div>
+
+
+</section>
+
+<!-- fetality section ends -->
+
+<!-- booking section starts   -->
+
+<section class="book" id="book">
+
+    <h1 class="heading"> <span>Vaccination</span> Count </h1>    
+    <div class="flourish-embed flourish-chart" data-src="story/767666">
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+    </div>
+
+</section>
+
+<!-- booking section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+    
+    <h1 class="heading"> Covid-19 <span>Test</span> </h1>
+
+    <iframe src="https://ourworldindata.org/grapher/full-list-cumulative-total-tests-per-thousand" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+
+
+</section>
+
+<!-- review section ends -->
+
+<!-- Test Rate section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading">Test Positive<span>Ratio</span> </h1>
+<iframe src="https://ourworldindata.org/grapher/covid-confirmed-cases-since-100th-case?country=USA+ESP+ITA+KOR+TWN+GBR+NOR" style="width: 100%; height: 600px; border: 0px none;">
+</iframe>
+
+</section>
+
+<!-- Test Rate section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer" id="ending">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home"> <i class="my_button"></i> home </a>
+            <a href="#global impact"> <i class="my_button"></i> Global Impact </a>
+            <a href="#impact"> <i class="my_button"></i> Impact Data </a>
+            <a href="#fetality"> <i class="my_button"></i> Fetality </a>
+            <a href="#book"> <i class="my_button"></i> Vaccination Data</a>
+            <a href="#review"> <i class="my_button"></i> Covid Test </a>
+            <a href="#blogs"> <i class="my_button"></i> Confirmation Ratio </a>
+        </div>
+
+        <div class="box">
+            <h3>Coiv Help</h3>
+            <a href="#"> <i class="my_button"></i> Online consultation </a>
+            <a href="https://static.mygov.in/rest/s3fs-public/mygov_161960438951307401.pdf"> <i class="my_button"></i> Do and Dont's </a>
+            <a href="https://selfregistration.cowin.gov.in/"> <i class="my_button"></i> Vaccination Registration </a>
+            <a href="https://prod-cdn.preprod.co-vin.in/assets/pdf/User_Guide_Citizen_registration_15%2BandPrecaution.pdf"> <i class="my_button"></i> How to get Vaccinated </a>
+            <a href="#"> <i class="my_button"></i> ambulance service </a>
+            <a href="#"> <i class="my_button"></i> Book medicines </a>
+            
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            
+            <a href="https://twitter.com/AnjaneekumarSi4"> <i class="twitter"></i> twitter </a>
+            
+            <a href="https://www.linkedin.com/in/anjaneekumar-singh"> <i class="linkedin"></i> linkedin </a>
+            
+        </div>
+        
+        <a class="twitter-timeline" data-width="800" data-height="400" data-theme="light" href="https://twitter.com/MoHFW_INDIA?ref_src=twsrc%5Etfw">Tweets by MoHFW_INDIA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    </div>
+
+    <div class="credit"> created by <span>Anjaneekumar Singh</span> | all rights reserved </div>
+
+</section>
+    
+    
+    <!--code goes here 
+      
+    <iframe src="https://public.domo.com/cards/dJ45D" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0">
+    </iframe>
+      
+      
+      -->
+    
+<div id="body"> 
+  
+<div id="chat-circle" class="btn btn-raised" style="bottom:20%; right:10%">
+		    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAADJElEQVR4nO3csU5TcRTH8d+5bSQRmjBQwqSEsDXER1BQBt31BaAYgokJi46w6WA0wEACPIEPwCCCvgEDbGpIhIHcEiMthpZyj4OLi+b+7/1fzi39febS/8n50kvIPylARERERERERETdQtK+wchyY0wDnVbBfYEMA9rrYzD/5EyhB4FgS4D1r7OlPeuJgBQBRpe0p11svBXgKYDA40xX4RLA6s2Bvvn9J9KyHCRRgNEl7YmKjU0Fxn0PdJUU2O4d6HtoGSHRb25UbLzr9OUDgAATv8LGG+MZ3IwsN8a0oLvovMfOv1wWItz58qy0b3G48xI10OkkP5djhXZBp6wOd16kCB5kMYglUZm0Otv9EwDcymIQY7etDk7yKOnzPoW9ktXB1+lZ3pEYwBgDGGMAYwxgjAGMMYAxBjDGAMYYwBgDGCtaD5AX5eonjfnSMwUOBLoVRFg/3hhPdbfMT4C7XgEqgDyPAtktz+ys4PH+jaRvxgDpFKAyN9gfbiaNwAAeKDBR7q8lultmAG90dqi6XXH9KQbwpxAhcL5bZgCPVOB8t8wAPqn73TID+OV8t8wAxhjAGAMYYwAAGkVmZzMAAG02zc5mAADt+qnZ2QygivZJzez4rg9wUQsRnZ+bnd/VAS7rp2gdHZrO0J03Yqq4qIVoHR1CNe5FWDa6JoBGEbTZRLt+ivZJzfSx87dMA6hg4WC2tPi/1zjcxV5Lmf0NiLN8yigAlx+f9wBcvhuvAbh8d94CcPnJeAnA5SeXOgCXn06qAFx+eokDcPl+JArA5fvj/mUdikUu3x/nAN/mSgueZ6h7fr+OYn4fIMB36xksmQdQ6AfrGSyZBwgirOPPtxh2JfMAxxvjexBdtZ7DinkAAAh/DM6rykfrOSzkIgDeV1q1nwOPAFlBlz2OUn91sW9D1e1KhGBKBZNQDKPDviItXLvntNPcBcibcvXzC0BfxX29a4B8PIJyLFy7+xqQl1m9PwPEkGUEBogpqwgM4CCLCAzgyHcEBkjAZwQGSMhXBAZIwUcEBkgpbQQG8CDrf9YopsGZHd/XtUREREREREREdI38BhWo9ediGulCAAAAAElFTkSuQmCC"
+          style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"/>
+	</div>
+  
+  <div class="chat-box">
+    <div class="chat-box-header">
+      ChatBot
+      <span class="chat-box-toggle"><i class="material-icons">close</i></span>
+    </div>
+    <div class="chat-box-body">
+      <div class="chat-box-overlay">   
+      </div>
+      <div class="chat-logs">
+       <iframe src='https://webchat.botframework.com/embed/qnabotfrt-bot?s=J2vbK4k79qI.eZ7RSP98KuIAC8PyUueOi0cgxkQxugwgEt2ANIdqu9M&mode=clear_past_conversations&background=transparent&no_delay_mode=true'  
+    style="width: 347px;height: 360px;border-radius: 5px;overflow: hidden;border: none;">
+    </iframe>
+      </div><!--chat-log -->
+    </div>
+    <div class="chat-input">      
+      <form>
+        
+      </form>      
+    </div>
+  </div> 
+</div>
+    
+    <!--code ends above -->
+    <script
+      src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.2.1.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://ajax.aspnetcdn.com/ajax/bootstrap/4.1.1/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Javascript code starts here -->
+    <script>
+        
+      let menu = document.querySelector('#menu-btn');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = ()=>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+}
+
+window.onscroll = ()=>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+}
+  
+        
+        
+      $(function() {
+  var INDEX = 0; 
+  $("#chat-submit").click(function(e) {
+    e.preventDefault();
+    var msg = $("#chat-input").val(); 
+    if(msg.trim() == ''){
+      return false;
+    }
+    generate_message(msg, 'self');
+    var buttons = [
+        {
+          name: 'Existing User',
+          value: 'existing'
+        },
+        {
+          name: 'New User',
+          value: 'new'
+        }
+      ];
+    setTimeout(function() {      
+      generate_message(msg, 'user');  
+    }, 1000)
+    
+  })
+  
+  function generate_message(msg, type) {
+    INDEX++;
+    var str="";
+    str += "<div id='cm-msg-"+INDEX+"' class=\"chat-msg "+type+"\">";
+    str += "          <span class=\"msg-avatar\">";
+    str += "            <img src=\"https:\/\/image.crisp.im\/avatar\/operator\/196af8cc-f6ad-4ef7-afd1-c45d5231387c\/240\/?1483361727745\">";
+    str += "          <\/span>";
+    str += "          <div class=\"cm-msg-text\">";
+    str += msg;
+    str += "          <\/div>";
+    str += "        <\/div>";
+    $(".chat-logs").append(str);
+    $("#cm-msg-"+INDEX).hide().fadeIn(300);
+    if(type == 'self'){
+     $("#chat-input").val(''); 
+    }    
+    $(".chat-logs").stop().animate({ scrollTop: $(".chat-logs")[0].scrollHeight}, 1000);    
+  }  
+  
+  function generate_button_message(msg, buttons){    
+    /* Buttons should be object array 
+      [
+        {
+          name: 'Existing User',
+          value: 'existing'
+        },
+        {
+          name: 'New User',
+          value: 'new'
+        }
+      ]
+    */
+    INDEX++;
+    var btn_obj = buttons.map(function(button) {
+       return  "              <li class=\"button\"><a href=\"javascript:;\" class=\"btn btn-primary chat-btn\" chat-value=\""+button.value+"\">"+button.name+"<\/a><\/li>";
+    }).join('');
+    var str="";
+    str += "<div id='cm-msg-"+INDEX+"' class=\"chat-msg user\">";
+    str += "          <span class=\"msg-avatar\">";
+    str += "            <img src=\"https:\/\/image.crisp.im\/avatar\/operator\/196af8cc-f6ad-4ef7-afd1-c45d5231387c\/240\/?1483361727745\">";
+    str += "          <\/span>";
+    str += "          <div class=\"cm-msg-text\">";
+    str += msg;
+    str += "          <\/div>";
+    str += "          <div class=\"cm-msg-button\">";
+    str += "            <ul>";   
+    str += btn_obj;
+    str += "            <\/ul>";
+    str += "          <\/div>";
+    str += "        <\/div>";
+    $(".chat-logs").append(str);
+    $("#cm-msg-"+INDEX).hide().fadeIn(300);   
+    $(".chat-logs").stop().animate({ scrollTop: $(".chat-logs")[0].scrollHeight}, 1000);
+    $("#chat-input").attr("disabled", true);
+  }
+  
+  $(document).delegate(".chat-btn", "click", function() {
+    var value = $(this).attr("chat-value");
+    var name = $(this).html();
+    $("#chat-input").attr("disabled", false);
+    generate_message(name, 'self');
+  })
+  
+  $("#chat-circle").click(function() {    
+    $("#chat-circle").toggle('scale');
+    $(".chat-box").toggle('scale');
+  })
+  
+  $(".chat-box-toggle").click(function() {
+    $("#chat-circle").toggle('scale');
+    $(".chat-box").toggle('scale');
+  })
+  
+})
+    </script>
+  </body>
+</html>
