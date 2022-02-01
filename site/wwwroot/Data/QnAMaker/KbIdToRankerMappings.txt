@@ -1,0 +1,1 @@
+02f5ce2d-4ac1-4ce8-91e2-cc8bcb5d43ed	https://qnamakerstore.blob.core.windows.net/qnamakerdata/rankers/bm25/ranker-English.ini

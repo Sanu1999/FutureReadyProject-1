@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EndpointKeysDTO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PrimaryEndpointKey>d0d25980-86f2-4281-beaf-d766f27b815b</PrimaryEndpointKey>
+  <SecondaryEndpointKey>ab268a16-0c1a-4f6a-84ed-2923f62b05d3</SecondaryEndpointKey>
+  <Language>Others</Language>
+  <EnableQnAOverDocument>false</EnableQnAOverDocument>
+</EndpointKeysDTO>
